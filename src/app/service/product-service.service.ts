@@ -5,10 +5,14 @@ import { Product } from '../model/product';
 
 @Injectable({
   providedIn: 'root'
+
 })
+
+
 export class ProductServiceService {
 
   serverAddress: string = 'https://nettuts.hu/jms/Ha891209/products';
+
 
   productsList$: BehaviorSubject<Product[]> = new BehaviorSubject<Product[]>([]);
 
